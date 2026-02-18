@@ -3,37 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genie's Anime</title>
+    <meta name="description" content="Portfolio website of Genie Rose Castillo, Web Developer and Designer">
+    <title>Genie Rose Castillo - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-
-    <header>
-        <h1>Genie's AnimeVerse </h1>
-        <p>Welcome to my site!</p>
-    </header>
-
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+    <!-- Skip to main content for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Genie Rose Castillo - Home">GRC</a>
+            <ul class="nav-menu" role="list">
+                <li><a href="#home" class="nav-link" aria-label="Navigate to home section">Home</a></li>
+                <li><a href="#about" class="nav-link" aria-label="Navigate to about section">About</a></li>
+                <li><a href="#projects" class="nav-link" aria-label="Navigate to projects section">Projects</a></li>
+                <li><a href="#contact" class="nav-link" aria-label="Navigate to contact section">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="container">
+    <!-- Hero Section -->
+    <main id="main-content">
+    <section id="home" class="hero" role="banner" aria-labelledby="hero-title">
+        <div class="hero-content">
+            <h1 id="hero-title" class="hero-title">Hi, I'm <span class="highlight">Genie Rose Castillo</span></h1>
+            <p class="hero-subtitle" role="doc-subtitle">Web Developer & Designer</p>
+            <p class="hero-description">Creating beautiful, functional websites with modern design</p>
+            <a href="#projects" class="btn" role="button" aria-label="View my work and projects">View My Work</a>
+        </div>
+    </section>
 
-    <main>
-        <h2>INDEX</h2>
-        <p>
-            WELCOME TO GENIE'S ANIMEVERSE.
-    
-        </p>
+    <!-- About Section -->
+    <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title" class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate web developer focused on creating clean, user-friendly websites. With expertise in HTML, CSS, and JavaScript, I build responsive designs that provide excellent user experiences.</p>
+                <div class="skills" role="list" aria-label="Technical skills">
+                    <div class="skill-item" role="listitem">HTML/CSS</div>
+                    <div class="skill-item" role="listitem">JavaScript</div>
+                    <div class="skill-item" role="listitem">UI/UX Design</div>
+                    <div class="skill-item" role="listitem">Responsive Design</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+        <div class="container">
+            <h2 id="projects-title" class="section-title">My Projects</h2>
+            <div class="project-grid" role="list" aria-label="Portfolio projects">
+                <article class="project-card" role="listitem" tabindex="0">
+                    <div class="project-header">
+                        <h3>Portfolio Website</h3>
+                    </div>
+                    <p>A modern, responsive portfolio showcasing web development skills</p>
+                    <div class="project-tags" role="list" aria-label="Technologies used">
+                        <span class="tag" role="listitem" aria-label="Technology: HTML">HTML</span>
+                        <span class="tag" role="listitem" aria-label="Technology: CSS">CSS</span>
+                    </div>
+                </article>
+                <article class="project-card" role="listitem" tabindex="0">
+                    <div class="project-header">
+                        <h3>E-Commerce Site</h3>
+                    </div>
+                    <p>Full-featured online shopping platform with cart functionality</p>
+                    <div class="project-tags" role="list" aria-label="Technologies used">
+                        <span class="tag" role="listitem" aria-label="Technology: HTML">HTML</span>
+                        <span class="tag" role="listitem" aria-label="Technology: CSS">CSS</span>
+                        <span class="tag" role="listitem" aria-label="Technology: JavaScript">JS</span>
+                    </div>
+                </article>
+                <article class="project-card" role="listitem" tabindex="0">
+                    <div class="project-header">
+                        <h3>Landing Page</h3>
+                    </div>
+                    <p>Beautiful landing page with smooth animations and modern design</p>
+                    <div class="project-tags" role="list" aria-label="Technologies used">
+                        <span class="tag" role="listitem" aria-label="Technology: HTML">HTML</span>
+                        <span class="tag" role="listitem" aria-label="Technology: CSS">CSS</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title" class="section-title">Get In Touch</h2>
+            <p class="contact-description">Have a project in mind? Let's work together!</p>
+            <div class="contact-info">
+                <a href="mailto:genie@example.com" class="contact-btn" role="button" aria-label="Send email to Genie Rose Castillo">Email Me</a>
+            </div>
+        </div>
+    </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 GENIE ROSE CASTILLO</p>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <p>&copy; 2026 Genie Rose Castillo. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
